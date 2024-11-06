@@ -1,114 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\",
+  "WorkspaceRootPath": "D:\\EXE_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|e:\\workspace\\vietnong\\vietnongapi2\\vietnongapi2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_backend\\businesslayer\\service\\sellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\sellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|e:\\workspace\\vietnong\\vietnongapi2\\vietnongapi2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\modal\\response\\accountresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\accountresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|e:\\workspace\\vietnong\\vietnongapi2\\vietnongapi2\\appstarts\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\appstarts\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|e:\\workspace\\vietnong\\vietnongapi2\\vietnongapi2\\appstarts\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_backend\\vietnongapi2\\appstarts\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\appstarts\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|e:\\workspace\\vietnong\\vietnongapi2\\vietnongapi2\\appstarts\\authconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\appstarts\\authconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\modal\\request\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\service\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\modal\\request\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\modal\\request\\accountrequesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\accountrequesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|e:\\workspace\\vietnong\\vietnongapi2\\bos\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|solutionrelative:bos\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|e:\\workspace\\vietnong\\vietnongapi2\\bos\\models\\vietnongcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|solutionrelative:bos\\models\\vietnongcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|e:\\workspace\\vietnong\\vietnongapi2\\vietnongapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|e:\\workspace\\vietnong\\vietnongapi2\\vietnongapi2\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\datalayer\\genericrepository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\genericrepository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\modal\\response\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|e:\\workspace\\vietnong\\vietnongapi2\\bos\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|solutionrelative:bos\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\datalayer\\genericrepository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\genericrepository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\datalayer\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\businesslayer\\modal\\response\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|e:\\workspace\\vietnong\\vietnongapi2\\bos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|solutionrelative:bos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|e:\\workspace\\vietnong\\vietnongapi2\\datalayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -117,13 +17,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "DockedWidth": 498,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -134,381 +30,56 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountResponseModel.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Response\\AccountResponseModel.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\AccountResponseModel.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Response\\AccountResponseModel.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\AccountResponseModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:38:17.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Service\\UserService.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\UserService.cs",
-              "RelativeToolTip": "BusinessLayer\\Service\\UserService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA3wF8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:55:11.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Service\\AuthService.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\AuthService.cs",
-              "RelativeToolTip": "BusinessLayer\\Service\\AuthService.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAIwDEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:40:59.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\Interface\\IUserService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\IUserService.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\Interface\\IUserService.cs",
-              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:48:48.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\Interface\\IAuthService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\IAuthService.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Service\\Interface\\IAuthService.cs",
-              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:41:11.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "RelativeToolTip": "VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:02:32.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthConfig.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\AppStarts\\AuthConfig.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\AppStarts\\AuthConfig.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\AppStarts\\AuthConfig.cs",
-              "RelativeToolTip": "VietNongAPI2\\AppStarts\\AuthConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:00:19.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AutoMapperConfig.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "RelativeToolTip": "VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:01:28.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Request\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\LoginDTO.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Request\\LoginDTO.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:39:02.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Models\\User.cs",
-              "RelativeDocumentMoniker": "BOs\\Models\\User.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Models\\User.cs",
-              "RelativeToolTip": "BOs\\Models\\User.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:38:28.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\appsettings.json",
-              "RelativeDocumentMoniker": "VietNongAPI2\\appsettings.json",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\appsettings.json",
-              "RelativeToolTip": "VietNongAPI2\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-23T21:04:06.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "VietNongAPI2\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:03:32.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:19:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccountRequesDTO.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Request\\AccountRequesDTO.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\AccountRequesDTO.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Request\\AccountRequesDTO.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\AccountRequesDTO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SellerService.cs",
+              "DocumentMoniker": "D:\\EXE_Backend\\BusinessLayer\\Service\\SellerService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\SellerService.cs",
+              "ToolTip": "D:\\EXE_Backend\\BusinessLayer\\Service\\SellerService.cs*",
+              "RelativeToolTip": "BusinessLayer\\Service\\SellerService.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:38:35.723Z",
+              "WhenOpened": "2024-11-06T06:53:54.868Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAuwA4AAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\EXE_Backend\\VietNongAPI2\\AppStarts\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "VietNongAPI2\\AppStarts\\DependencyInjection.cs",
+              "ToolTip": "D:\\EXE_Backend\\VietNongAPI2\\AppStarts\\DependencyInjection.cs",
+              "RelativeToolTip": "VietNongAPI2\\AppStarts\\DependencyInjection.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:39:06.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VietNongContext.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Models\\VietNongContext.cs",
-              "RelativeDocumentMoniker": "BOs\\Models\\VietNongContext.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Models\\VietNongContext.cs",
-              "RelativeToolTip": "BOs\\Models\\VietNongContext.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAkwCoAAAA+AQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:10:44.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\Program.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\Program.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\Program.cs",
-              "RelativeToolTip": "VietNongAPI2\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAawEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:05:02.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\WeatherForecast.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\VietNongAPI2\\WeatherForecast.cs",
-              "RelativeToolTip": "VietNongAPI2\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:13:00.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Role.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "BOs\\Models\\Role.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Models\\Role.cs",
-              "RelativeToolTip": "BOs\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:48:30.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\GenericRepository\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "DataLayer\\GenericRepository\\IGenericRepository.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\GenericRepository\\IGenericRepository.cs",
-              "RelativeToolTip": "DataLayer\\GenericRepository\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:44:27.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\GenericRepository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "DataLayer\\GenericRepository\\GenericRepository.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\GenericRepository\\GenericRepository.cs",
-              "RelativeToolTip": "DataLayer\\GenericRepository\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:43:45.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "baseResponse.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Response\\baseResponse.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\baseResponse.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Response\\baseResponse.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\baseResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:38:20.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\UnitOfWork\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "DataLayer\\UnitOfWork\\UnitOfWork.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\UnitOfWork\\UnitOfWork.cs",
-              "RelativeToolTip": "DataLayer\\UnitOfWork\\UnitOfWork.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowBEAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:45:38.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DataLayer",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\DataLayer.csproj",
-              "RelativeDocumentMoniker": "DataLayer\\DataLayer.csproj",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\DataLayer.csproj",
-              "RelativeToolTip": "DataLayer\\DataLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-23T20:43:09.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "BusinessLayer",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\BusinessLayer.csproj",
-              "RelativeDocumentMoniker": "BusinessLayer\\BusinessLayer.csproj",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\BusinessLayer.csproj",
-              "RelativeToolTip": "BusinessLayer\\BusinessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-23T20:37:08.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TokenModel.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Response\\TokenModel.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\TokenModel.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\Modal\\Response\\TokenModel.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\TokenModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:38:21.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\Class1.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Class1.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\Class1.cs",
-              "RelativeToolTip": "DataLayer\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T15:57:05.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Class1.cs",
-              "RelativeDocumentMoniker": "BOs\\Class1.cs",
-              "ToolTip": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\Class1.cs",
-              "RelativeToolTip": "BOs\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T15:59:59.744Z",
+              "WhenOpened": "2024-11-06T06:51:49.896Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 191,
+          "DockedWidth": 1188,
           "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"

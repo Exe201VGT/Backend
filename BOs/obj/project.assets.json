@@ -4344,24 +4344,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ngmcu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Hi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\BOs.csproj",
+      "projectUniqueName": "D:\\EXE_Backend\\BOs\\BOs.csproj",
       "projectName": "BOs",
-      "projectPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\BOs.csproj",
-      "packagesPath": "C:\\Users\\ngmcu\\.nuget\\packages\\",
-      "outputPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\obj\\",
+      "projectPath": "D:\\EXE_Backend\\BOs\\BOs.csproj",
+      "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
+      "outputPath": "D:\\EXE_Backend\\BOs\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ngmcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
