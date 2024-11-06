@@ -1,6 +1,7 @@
 ﻿using BOs.Models;
 using BusinessLayer.Modal.Response;
 using BusinessLayer.Service.Interface;
+using DataLayer.Repository;
 using DataLayer.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,87 +12,42 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Service
 {
-    public class UserServices : IUserService
+    public class UserService : IUserService
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUserRepository _userRepository;
 
-        public UserServices(IUnitOfWork unitOfWork)
+        public UserService(IUserRepository userRepository)
         {
-            _unitOfWork = unitOfWork;
+            _userRepository = userRepository;
         }
 
-        public IEnumerable<User> GetUsers()
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            return _unitOfWork.Repository<User>().GetAll();
-
+            return await _userRepository.GetAllUsersAsync();
         }
 
-        public async Task<User> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(int userId)
         {
-            return await _unitOfWork.Repository<User>().GetById(id);
+            return await _userRepository.GetUserByIdAsync(userId);
         }
-
-        public async Task CreateUserAsync(User User)
-        {
-            await _unitOfWork.Repository<User>().InsertAsync(User);
-            await _unitOfWork.CommitAsync();
-        }
-
-        public async Task UpdateUserAsync(User User)
-        {
-            await _unitOfWork.Repository<User>().Update(User, User.UserId);
-            await _unitOfWork.CommitAsync();
-        }
-
-        public async Task DeleteUserAsync(int id)
-        {
-            var User = await _unitOfWork.Repository<User>().GetById(id);
-            if (User != null)
-            {
-                _unitOfWork.Repository<User>().Delete(User);
-                await _unitOfWork.CommitAsync();
-            }
-        }
-
-        public async Task<bool> UserExistsAsync(int id)
-        {
-            var User = await _unitOfWork.Repository<User>().GetById(id);
-            return User != null;
-        }
-
         public async Task<User> GetUserByUsernameAsync(string username)
         {
-            // Truy vấn người dùng từ cơ sở dữ liệu theo tên người dùng
-            var user = await _unitOfWork.Repository<User>()
-                .GetAll()
-                .Include(u => u.Role)
-                .FirstOrDefaultAsync(u => u.Username == username);
-
-            return user;
+            return await _userRepository.GetUserByUsernameAsync(username);
         }
 
-
-
-
-
-        public async Task<AccountResponseModel> GetUserProfile(int id)
+        public async Task<bool> UpdateUserAsync(User user)
         {
-            var User = await _unitOfWork.Repository<User>().GetById(id);
+            return await _userRepository.UpdateUserAsync(user);
+        }
 
-            if (User == null)
-            {
-                throw new Exception($"User with ID {id} not found.");
-            }
+        public async Task<bool> UpdateUserStatusAsync(int userId, string status)
+        {
+            return await _userRepository.UpdateUserStatusAsync(userId, status);
+        }
 
-            var responseModel = new AccountResponseModel
-            {
-                UserId = User.UserId,
-                Username = User.Username,
-                RoleId = (int)User.RoleId,
-                
-            };
-
-            return responseModel;
+        public async Task<bool> DeleteUserAsync(int userId)
+        {
+            return await _userRepository.DeleteUserAsync(userId);
         }
     }
 }

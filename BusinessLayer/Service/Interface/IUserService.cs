@@ -8,15 +8,13 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Service.Interface
 {
-	public interface IUserService
-	{
-		IEnumerable<User> GetUsers();
-		Task<User> GetUserByIdAsync(int id);
-		Task CreateUserAsync(User User);
-		Task UpdateUserAsync(User User);
-		Task DeleteUserAsync(int id);
-		Task<bool> UserExistsAsync(int id);
-		Task<User> GetUserByUsernameAsync(string username);
-		Task<AccountResponseModel> GetUserProfile(int id);
-	}
+    public interface IUserService
+    {
+        Task<IEnumerable<User>> GetAllUsersAsync();
+        Task<User> GetUserByIdAsync(int userId);
+        Task<User> GetUserByUsernameAsync(string username);
+        Task<bool> UpdateUserAsync(User user);
+        Task<bool> UpdateUserStatusAsync(int userId, string status);
+        Task<bool> DeleteUserAsync(int userId);
+    }
 }
