@@ -2,12 +2,13 @@
 using BusinessLayer.Service.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace VietNongAPI2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata/[controller]")]
     [ApiController]
-    public class RevenueController : ControllerBase
+    public class RevenueController : ODataController
     {
         private readonly IRevenueService _revenueService;
 

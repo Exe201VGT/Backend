@@ -14,6 +14,14 @@ using Microsoft.OData.ModelBuilder;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("http://localhost:3000",
+        policy => policy
+           .WithOrigins("http://localhost:3000")  // Chỉ cho phép nguồn từ localhost:3000
+        .AllowAnyMethod()
+        .AllowAnyHeader());
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -75,6 +83,9 @@ if (app.Environment.IsDevelopment())
 }
 app.UseODataBatching();
 
+
+
+app.UseCors("http://localhost:3000");
 
 
 //test middleware

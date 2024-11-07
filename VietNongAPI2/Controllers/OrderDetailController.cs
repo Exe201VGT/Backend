@@ -4,12 +4,14 @@ using BOs.Models;
 using BusinessLayer.Service.Interface;
 using BusinessLayer.Modal.Request;
 using BusinessLayer.Modal.Response;
+using Microsoft.AspNetCore.OData.Query;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace VietNongAPI2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata/[controller]")]
     [ApiController]
-    public class OrderDetailController : ControllerBase
+    public class OrderDetailController : ODataController
     {
         private readonly IOrderDetailService _orderDetailService;
         private readonly IMapper _mapper;
@@ -20,6 +22,7 @@ namespace VietNongAPI2.Controllers
             _mapper = mapper;
         }
 
+        [EnableQuery]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<OrderDetailDTO>>> GetAllOrderDetails()
         {
