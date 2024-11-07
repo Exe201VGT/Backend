@@ -5,12 +5,14 @@ using BusinessLayer.Modal.Response;
 using BusinessLayer.Service.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace VietNongAPI2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ProductController : ODataController
     {
         private readonly IProductService _productService;
         private readonly IMapper _mapper;
@@ -21,6 +23,8 @@ namespace VietNongAPI2.Controllers
             _mapper = mapper;
         }
 
+
+        [EnableQuery]
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {

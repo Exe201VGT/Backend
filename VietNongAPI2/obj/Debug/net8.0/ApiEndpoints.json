@@ -32,1601 +32,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
-    "Method": "GetAllCategories",
-    "RelativePath": "api/category",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
-    "Method": "CreateCategory",
-    "RelativePath": "api/category",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "categoryCreateDTO",
-        "Type": "BusinessLayer.Modal.Request.CategoryCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
-    "Method": "GetCategoryById",
-    "RelativePath": "api/category/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
-    "Method": "UpdateCategory",
-    "RelativePath": "api/category/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "categoryUpdateDTO",
-        "Type": "BusinessLayer.Modal.Request.CategoryUpdateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
-    "Method": "DeleteCategory",
-    "RelativePath": "api/category/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "GetAllOrders",
-    "RelativePath": "api/order",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "CreateOrder",
-    "RelativePath": "api/order",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderCreateDto",
-        "Type": "BusinessLayer.Modal.Request.OrderCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.OrderDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "GetOrderById",
-    "RelativePath": "api/order/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.OrderDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "UpdateOrder",
-    "RelativePath": "api/order/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "orderDto",
-        "Type": "BusinessLayer.Modal.Response.OrderDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "DeleteOrder",
-    "RelativePath": "api/order/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "GetOrdersByBuyerId",
-    "RelativePath": "api/order/buyer/{buyerId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "buyerId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "GetOrdersBySellerId",
-    "RelativePath": "api/order/seller/{sellerId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sellerId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderController",
-    "Method": "GetOrdersByStatus",
-    "RelativePath": "api/order/status/{status}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "status",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
-    "Method": "GetAllOrderDetails",
-    "RelativePath": "api/orderdetail",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDetailDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
-    "Method": "CreateOrderDetail",
-    "RelativePath": "api/orderdetail",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderDetailCreateDto",
-        "Type": "BusinessLayer.Modal.Request.OrderDetailCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.OrderDetailDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
-    "Method": "GetOrderDetailById",
-    "RelativePath": "api/orderdetail/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.OrderDetailDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
-    "Method": "UpdateOrderDetail",
-    "RelativePath": "api/orderdetail/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "orderDetailUpdateDto",
-        "Type": "BusinessLayer.Modal.Request.OrderDetailUpdateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
-    "Method": "DeleteOrderDetail",
-    "RelativePath": "api/orderdetail/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
-    "Method": "GetOrderDetailsByOrderId",
-    "RelativePath": "api/orderdetail/order/{orderId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDetailDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderHistoryController",
-    "Method": "GetAllOrderHistories",
-    "RelativePath": "api/orderhistory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderHistoryDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderHistoryController",
-    "Method": "GetOrderHistoriesByOrderId",
-    "RelativePath": "api/orderhistory/order/{orderId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderHistoryDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.OrderHistoryController",
-    "Method": "GetOrderHistoriesByUserId",
-    "RelativePath": "api/orderhistory/user/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderHistoryDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.ProductController",
-    "Method": "GetAllProducts",
-    "RelativePath": "api/product",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.ProductController",
-    "Method": "CreateProduct",
-    "RelativePath": "api/product",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "productCreateDTO",
-        "Type": "BusinessLayer.Modal.Request.ProductCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.ProductController",
-    "Method": "GetProductById",
-    "RelativePath": "api/product/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.ProductController",
-    "Method": "UpdateProduct",
-    "RelativePath": "api/product/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "productUpdateDTO",
-        "Type": "BusinessLayer.Modal.Request.ProductUpdateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.ProductController",
-    "Method": "DeleteProduct",
-    "RelativePath": "api/product/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
-    "Method": "GetRevenueByDay",
-    "RelativePath": "api/revenue/getbyday",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sellerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "date",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
-    "Method": "GetRevenueByMonth",
-    "RelativePath": "api/revenue/getbymonth",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sellerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "year",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "month",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
-    "Method": "GetRevenueByRange",
-    "RelativePath": "api/revenue/getbyrange",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sellerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "startDate",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "endDate",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
-    "Method": "GetRevenueByYear",
-    "RelativePath": "api/revenue/getbyyear",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sellerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "year",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.SellerController",
-    "Method": "GetAllSellers",
-    "RelativePath": "api/seller",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.SellerDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.SellerController",
-    "Method": "GetSellerById",
-    "RelativePath": "api/seller/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.SellerDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.SellerController",
-    "Method": "UpdateSeller",
-    "RelativePath": "api/seller/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "sellerUpdateDto",
-        "Type": "BusinessLayer.Modal.Response.SellerUpdateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.SellerController",
-    "Method": "DeleteSeller",
-    "RelativePath": "api/seller/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VietNongAPI2.Controllers.SellerController",
-    "Method": "RegisterSeller",
-    "RelativePath": "api/seller/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sellerRegisterDto",
-        "Type": "BusinessLayer.Modal.Request.SellerRegisterDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BusinessLayer.Modal.Response.SellerDTO",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=full;IEEE754Compatible=false",
-          "application/json;odata.metadata=full;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=false",
-          "application/json;odata.metadata=none;IEEE754Compatible=true",
-          "application/json;odata.streaming=true;IEEE754Compatible=false",
-          "application/json;odata.streaming=true;IEEE754Compatible=true",
-          "application/json;odata.streaming=false;IEEE754Compatible=false",
-          "application/json;odata.streaming=false;IEEE754Compatible=true",
-          "application/json;IEEE754Compatible=false",
-          "application/json;IEEE754Compatible=true",
-          "application/xml",
-          "application/json",
-          "text/plain",
-          "application/octet-stream",
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "VietNongAPI2.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/user",
@@ -2023,6 +428,1601 @@
       }
     ],
     "EndpointName": "odata/$metadata"
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "odata/category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
+    "Method": "CreateCategory",
+    "RelativePath": "odata/category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryCreateDTO",
+        "Type": "BusinessLayer.Modal.Request.CategoryCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
+    "Method": "GetCategoryById",
+    "RelativePath": "odata/category/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
+    "Method": "UpdateCategory",
+    "RelativePath": "odata/category/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoryUpdateDTO",
+        "Type": "BusinessLayer.Modal.Request.CategoryUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CategoryController",
+    "Method": "DeleteCategory",
+    "RelativePath": "odata/category/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "GetAllOrders",
+    "RelativePath": "odata/order",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "CreateOrder",
+    "RelativePath": "odata/order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderCreateDto",
+        "Type": "BusinessLayer.Modal.Request.OrderCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.OrderDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "GetOrderById",
+    "RelativePath": "odata/order/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.OrderDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "UpdateOrder",
+    "RelativePath": "odata/order/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderDto",
+        "Type": "BusinessLayer.Modal.Response.OrderDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "DeleteOrder",
+    "RelativePath": "odata/order/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "GetOrdersByBuyerId",
+    "RelativePath": "odata/order/buyer/{buyerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buyerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "GetOrdersBySellerId",
+    "RelativePath": "odata/order/seller/{sellerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sellerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderController",
+    "Method": "GetOrdersByStatus",
+    "RelativePath": "odata/order/status/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
+    "Method": "GetAllOrderDetails",
+    "RelativePath": "odata/orderdetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDetailDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
+    "Method": "CreateOrderDetail",
+    "RelativePath": "odata/orderdetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderDetailCreateDto",
+        "Type": "BusinessLayer.Modal.Request.OrderDetailCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.OrderDetailDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
+    "Method": "GetOrderDetailById",
+    "RelativePath": "odata/orderdetail/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.OrderDetailDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
+    "Method": "UpdateOrderDetail",
+    "RelativePath": "odata/orderdetail/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderDetailUpdateDto",
+        "Type": "BusinessLayer.Modal.Request.OrderDetailUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
+    "Method": "DeleteOrderDetail",
+    "RelativePath": "odata/orderdetail/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderDetailController",
+    "Method": "GetOrderDetailsByOrderId",
+    "RelativePath": "odata/orderdetail/order/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderDetailDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderHistoryController",
+    "Method": "GetAllOrderHistories",
+    "RelativePath": "odata/orderhistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderHistoryDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderHistoryController",
+    "Method": "GetOrderHistoriesByOrderId",
+    "RelativePath": "odata/orderhistory/order/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderHistoryDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.OrderHistoryController",
+    "Method": "GetOrderHistoriesByUserId",
+    "RelativePath": "odata/orderhistory/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.OrderHistoryDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.ProductController",
+    "Method": "GetAllProducts",
+    "RelativePath": "odata/product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.ProductController",
+    "Method": "CreateProduct",
+    "RelativePath": "odata/product",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productCreateDTO",
+        "Type": "BusinessLayer.Modal.Request.ProductCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "odata/product/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "odata/product/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "productUpdateDTO",
+        "Type": "BusinessLayer.Modal.Request.ProductUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.ProductController",
+    "Method": "DeleteProduct",
+    "RelativePath": "odata/product/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
+    "Method": "GetRevenueByDay",
+    "RelativePath": "odata/revenue/getbyday",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sellerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
+    "Method": "GetRevenueByMonth",
+    "RelativePath": "odata/revenue/getbymonth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sellerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
+    "Method": "GetRevenueByRange",
+    "RelativePath": "odata/revenue/getbyrange",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sellerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.RevenueController",
+    "Method": "GetRevenueByYear",
+    "RelativePath": "odata/revenue/getbyyear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sellerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.RevenueSummaryDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.SellerController",
+    "Method": "GetAllSellers",
+    "RelativePath": "odata/seller",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BusinessLayer.Modal.Response.SellerDTO, BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.SellerController",
+    "Method": "GetSellerById",
+    "RelativePath": "odata/seller/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.SellerDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.SellerController",
+    "Method": "UpdateSeller",
+    "RelativePath": "odata/seller/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sellerUpdateDto",
+        "Type": "BusinessLayer.Modal.Response.SellerUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.SellerController",
+    "Method": "DeleteSeller",
+    "RelativePath": "odata/seller/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.SellerController",
+    "Method": "RegisterSeller",
+    "RelativePath": "odata/seller/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sellerRegisterDto",
+        "Type": "BusinessLayer.Modal.Request.SellerRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BusinessLayer.Modal.Response.SellerDTO",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "VietNongAPI2.Controllers.WeatherForecastController",
