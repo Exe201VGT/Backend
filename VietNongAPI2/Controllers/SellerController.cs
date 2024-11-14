@@ -53,7 +53,7 @@ namespace VietNongAPI2.Controllers
 
         // 2. Lấy danh sách tất cả seller - chỉ dành cho quản trị viên
         [HttpGet]
-        [Authorize(Roles = "Admin")] // Yêu cầu quyền quản trị viên
+        [Authorize(Roles = "admin")] // Yêu cầu quyền quản trị viên
         public async Task<ActionResult<IEnumerable<SellerDTO>>> GetAllSellers()
         {
             var sellers = await _sellerService.GetAllSellersAsync();
@@ -87,7 +87,7 @@ namespace VietNongAPI2.Controllers
             if (seller == null)
                 return NotFound();
 
-            if (seller.UserId != userId && !User.IsInRole("Admin"))
+            if (seller.UserId != userId && !User.IsInRole("admin"))
                 return Forbid();
 
             if (!ModelState.IsValid)
@@ -103,7 +103,7 @@ namespace VietNongAPI2.Controllers
 
         // 5. Xóa seller - chỉ dành cho quản trị viên
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")] // Yêu cầu quyền quản trị viên
+        [Authorize(Roles = "admin")] // Yêu cầu quyền quản trị viên
         public async Task<IActionResult> DeleteSeller(int id)
         {
             var result = await _sellerService.DeleteSellerAsync(id);

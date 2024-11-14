@@ -30,6 +30,7 @@ namespace VietNongAPI2.AppStarts
             CreateMap<UserUpdateDTO, User>();
             CreateMap<Seller, SellerDTO>();
             CreateMap<SellerRegisterDTO, Seller>();
+            CreateMap<SellerUpdateDTO, Seller>();
         }
     }
 }

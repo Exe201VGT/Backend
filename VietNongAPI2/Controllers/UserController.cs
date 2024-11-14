@@ -23,7 +23,7 @@ namespace VietNongAPI2.Controllers
 
         // Lấy danh sách người dùng (cho quản trị viên)
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<IEnumerable<UserDTO>>> GetAllUsers()
         {
             var users = await _userService.GetAllUsersAsync();
@@ -33,7 +33,7 @@ namespace VietNongAPI2.Controllers
 
         // Lấy thông tin chi tiết người dùng theo ID (cho quản trị viên)
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<UserDTO>> GetUserById(int id)
         {
             var user = await _userService.GetUserByIdAsync(id);
@@ -55,7 +55,7 @@ namespace VietNongAPI2.Controllers
 
         // Cập nhật thông tin người dùng (cho quản trị viên)
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> UpdateUser(int id, [FromBody] UserUpdateDTO userUpdateDto)
         {
             if (id != userUpdateDto.UserId) return BadRequest();
@@ -72,7 +72,7 @@ namespace VietNongAPI2.Controllers
 
         // Cập nhật trạng thái người dùng (kích hoạt hoặc khóa tài khoản)
         [HttpPatch("{id}/status")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> UpdateUserStatus(int id, [FromBody] UserStatusUpdateDTO statusUpdateDto)
         {
             if (id != statusUpdateDto.UserId) return BadRequest();
@@ -85,7 +85,7 @@ namespace VietNongAPI2.Controllers
 
         // Xóa người dùng (chỉ dành cho quản trị viên)
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var result = await _userService.DeleteUserAsync(id);
