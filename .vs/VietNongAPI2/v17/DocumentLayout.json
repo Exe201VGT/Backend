@@ -87,8 +87,7 @@
               "RelativeToolTip": "BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:04:01.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:04:01.491Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAIwBMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:02:54.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:02:54.047Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:02:37.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:02:37.309Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:02:18.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:02:18.091Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "VietNongAPI2\\Controllers\\UserController.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAADwv1cAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T03:57:56.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T03:57:56.439Z"
             },
             {
               "$type": "Document",
@@ -152,8 +147,7 @@
               "RelativeToolTip": "VietNongAPI2\\Controllers\\SellerController.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAowF8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T03:16:06.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T03:16:06.647Z"
             }
           ]
         },
