@@ -1,36 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\EXE_Backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_backend\\vietnongapi2\\appstarts\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\appstarts\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_backend\\businesslayer\\modal\\request\\sellerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\sellerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_backend\\businesslayer\\modal\\response\\sellerresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\sellerresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_backend\\businesslayer\\modal\\response\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_backend\\vietnongapi2\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_backend\\businesslayer\\modal\\request\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_backend\\vietnongapi2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 498,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,91 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutoMapperConfig.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "ToolTip": "D:\\EXE_Backend\\VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "RelativeToolTip": "VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:06:55.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductResponseDTO.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs",
-              "ToolTip": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:04:01.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SellerResponseDTO.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
-              "ToolTip": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwBMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:02:54.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRequestDTO.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
-              "ToolTip": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:02:37.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SellerRequestDTO.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
-              "ToolTip": "D:\\EXE_Backend\\BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
-              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:02:18.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\VietNongAPI2\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\EXE_Backend\\VietNongAPI2\\Controllers\\UserController.cs",
-              "RelativeToolTip": "VietNongAPI2\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAADwv1cAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T03:57:56.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SellerController.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\VietNongAPI2\\Controllers\\SellerController.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\Controllers\\SellerController.cs",
-              "ToolTip": "D:\\EXE_Backend\\VietNongAPI2\\Controllers\\SellerController.cs",
-              "RelativeToolTip": "VietNongAPI2\\Controllers\\SellerController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowF8AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T03:16:06.647Z"
             }
           ]
         },
@@ -158,6 +44,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

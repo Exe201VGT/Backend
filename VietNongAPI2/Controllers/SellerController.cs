@@ -83,22 +83,22 @@ namespace VietNongAPI2.Controllers
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
             // Kiểm tra quyền truy cập - chỉ cho phép cập nhật nếu là seller hoặc quản trị viên
-            var seller = await _sellerService.GetSellerByIdAsync(id);
-            if (seller == null)
+            var existingSeller = await _sellerService.GetSellerByIdAsync(id);
+            if (existingSeller == null)
                 return NotFound();
 
-            if (seller.UserId != userId && !User.IsInRole("admin"))
+            if (existingSeller.UserId != userId && !User.IsInRole("admin"))
                 return Forbid();
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var updatedSeller = _mapper.Map<Seller>(sellerUpdateDto);
-            updatedSeller.SellerId = id; // Đảm bảo ID chính xác
+            // Cập nhật các trường cần thiết thay vì ánh xạ toàn bộ
+            _mapper.Map(sellerUpdateDto, existingSeller);
 
-            await _sellerService.UpdateSellerAsync(updatedSeller);
+            await _sellerService.UpdateSellerAsync(existingSeller);
 
-            return NoContent();
+            return Ok(new { Message = "Update thành công" });
         }
 
         // 5. Xóa seller - chỉ dành cho quản trị viên
@@ -110,7 +110,7 @@ namespace VietNongAPI2.Controllers
             if (!result)
                 return NotFound();
 
-            return NoContent();
+            return Ok(new { Message = "Delete thành công" });
         }
     }
 }

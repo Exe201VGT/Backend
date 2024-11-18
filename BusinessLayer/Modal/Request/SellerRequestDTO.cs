@@ -17,8 +17,6 @@ namespace BusinessLayer.Modal.Request
 
     public class SellerUpdateDTO
     {
-        public int SellerId { get; set; }
-        public int? UserId { get; set; }
         public string? ShopName { get; set; }
         public string? ShopAddress { get; set; }
         public string? PhoneNumber { get; set; }
