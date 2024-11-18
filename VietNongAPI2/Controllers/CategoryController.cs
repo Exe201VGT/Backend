@@ -5,12 +5,14 @@ using BusinessLayer.Modal.Response;
 using BusinessLayer.Service.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace VietNongAPI2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CategoryController : ODataController
     {
         private readonly ICategoryService _categoryService;
         private readonly IMapper _mapper;
@@ -21,6 +23,7 @@ namespace VietNongAPI2.Controllers
             _mapper = mapper;
         }
 
+        [EnableQuery]
         [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {

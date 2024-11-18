@@ -3,12 +3,14 @@ using AutoMapper;
 using BOs.Models;
 using BusinessLayer.Service.Interface;
 using BusinessLayer.Modal.Response;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
+using Microsoft.AspNetCore.OData.Query;
 
 namespace VietNongAPI2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata/[controller]")]
     [ApiController]
-    public class OrderHistoryController : ControllerBase
+    public class OrderHistoryController : ODataController
     {
         private readonly IOrderHistoryService _orderHistoryService;
         private readonly IMapper _mapper;
@@ -20,6 +22,8 @@ namespace VietNongAPI2.Controllers
         }
 
         // Lấy toàn bộ lịch sử mua hàng
+
+        [EnableQuery]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<OrderHistoryDTO>>> GetAllOrderHistories()
         {

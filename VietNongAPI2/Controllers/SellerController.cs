@@ -8,12 +8,13 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace VietNongAPI2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata/[controller]")]
     [ApiController]
-    public class SellerController : ControllerBase
+    public class SellerController : ODataController
     {
         private readonly ISellerService _sellerService;
         private readonly IMapper _mapper;
