@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Modal.Response;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,6 @@ namespace BusinessLayer.Modal.Request
         public int? SellerId { get; set; }
         public decimal? TotalAmount { get; set; }
         public string? Status { get; set; }
+        public List<OrderDetailCreateDTO> Details { get; set; }
     }
 }

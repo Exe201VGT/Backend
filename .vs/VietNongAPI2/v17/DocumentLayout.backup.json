@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\EXE_Backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_backend\\businesslayer\\service\\sellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\sellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_backend\\vietnongapi2\\appstarts\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\appstarts\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,8 +9,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 498,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -39,40 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SellerService.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\BusinessLayer\\Service\\SellerService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Service\\SellerService.cs",
-              "ToolTip": "D:\\EXE_Backend\\BusinessLayer\\Service\\SellerService.cs*",
-              "RelativeToolTip": "BusinessLayer\\Service\\SellerService.cs*",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T06:53:54.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\EXE_Backend\\VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "ToolTip": "D:\\EXE_Backend\\VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "RelativeToolTip": "VietNongAPI2\\AppStarts\\DependencyInjection.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwDUAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T06:51:49.896Z",
-              "EditorCaption": ""
             }
           ]
         },

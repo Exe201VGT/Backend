@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\BusinessLayer.csproj": {}
+    "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\BOs.csproj": {
+    "D:\\EXE_Backend\\BOs\\BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\BOs.csproj",
+        "projectUniqueName": "D:\\EXE_Backend\\BOs\\BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\BOs.csproj",
-        "packagesPath": "C:\\Users\\ngmcu\\.nuget\\packages\\",
-        "outputPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\obj\\",
+        "projectPath": "D:\\EXE_Backend\\BOs\\BOs.csproj",
+        "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
+        "outputPath": "D:\\EXE_Backend\\BOs\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ngmcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,21 +95,17 @@
         }
       }
     },
-    "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\BusinessLayer.csproj": {
+    "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\ngmcu\\.nuget\\packages\\",
-        "outputPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BusinessLayer\\obj\\",
+        "projectPath": "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
+        "outputPath": "D:\\EXE_Backend\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ngmcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,8 +120,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\DataLayer.csproj"
+              "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -174,21 +166,17 @@
         }
       }
     },
-    "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\DataLayer.csproj": {
+    "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\ngmcu\\.nuget\\packages\\",
-        "outputPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\DataLayer\\obj\\",
+        "projectPath": "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
+        "outputPath": "D:\\EXE_Backend\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ngmcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -203,8 +191,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\BOs.csproj": {
-                "projectPath": "E:\\WORKSPACE\\VietNong\\VietNongAPI2\\BOs\\BOs.csproj"
+              "D:\\EXE_Backend\\BOs\\BOs.csproj": {
+                "projectPath": "D:\\EXE_Backend\\BOs\\BOs.csproj"
               }
             }
           }
