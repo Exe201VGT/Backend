@@ -38,3 +38,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /WineManagement/.vs/WineManagement/FileContentIndex/842c0c58-ebf0-4908-8e9e-132b994c92f0.vsidx
+
+# Thư mục bin và obj
+bin/
+obj/
+
+# File tự sinh của .NET
+*.cache
+*.exe
+*.pdb
+*.dll
+*.nuget
+*.csproj.FileListAbsolute.txt
+
