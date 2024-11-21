@@ -11,6 +11,8 @@ public partial class FarmingHandbook
 
     public string? Content { get; set; }
 
+    public string? HandbookImage { get; set; }
+
     public string? Category { get; set; }
 
     public DateTime? CreatedAt { get; set; }

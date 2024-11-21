@@ -51,7 +51,7 @@ namespace DataLayer.Repository
 
         public async Task<IEnumerable<Order>> GetOrdersByStatusAsync(string status)
         {
-            return await _context.Orders.Where(o => o.Status == status).ToListAsync();
+            return await _context.Orders.Where(o => o.OrderStatus == status).ToListAsync();
         }
 
         public async Task<int> CreateOrderAsync(Order order)

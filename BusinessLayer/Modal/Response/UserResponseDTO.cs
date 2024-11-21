@@ -16,6 +16,7 @@ namespace BusinessLayer.Modal.Response
         public string? Address { get; set; }
         public DateOnly? DateOfBirth { get; set; }
         public string? Gender { get; set; }
+        public string? ProfileImage { get; set; }
         public string? Status { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
@@ -30,5 +31,6 @@ namespace BusinessLayer.Modal.Response
         public string? Address { get; set; }
         public DateOnly? DateOfBirth { get; set; }
         public string? Gender { get; set; }
+        public string? ProfileImage { get; set; }
     }
 }

@@ -10,12 +10,14 @@ namespace DataLayer.Repository
 {
     public interface IProductRepository
     {
-        Task<IEnumerable<Product>> GetAllAsync();
-        Task<Product> GetByIdAsync(int id);
-        Task<int> CreateAsync(Product product);
-        Task<int> UpdateAsync(Product product);
-        Task<int> DeleteAsync(int id);
+        Task<IEnumerable<Product>> GetPagedProductsAsync(int page, int pageSize);
+        Task<int> GetTotalProductsCountAsync();
+        Task<Product> GetProductByIdAsync(int productId);
+        Task<Product> CreateProductAsync(Product product);
+        Task<bool> UpdateProductAsync(Product product);
+        Task<bool> DeleteProductAsync(int productId);
     }
+
     public class ProductRepository : IProductRepository
     {
         private readonly VietNongContext _context;
@@ -25,35 +27,50 @@ namespace DataLayer.Repository
             _context = context;
         }
 
-        public async Task<IEnumerable<Product>> GetAllAsync()
+        public async Task<IEnumerable<Product>> GetPagedProductsAsync(int page, int pageSize)
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Products
+                .OrderBy(p => p.CreatedAt)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .Include(p => p.Category)
+                .ToListAsync();
         }
 
-        public async Task<Product> GetByIdAsync(int id)
+        public async Task<int> GetTotalProductsCountAsync()
         {
-            return await _context.Products.FindAsync(id);
+            return await _context.Products.CountAsync();
         }
 
-        public async Task<int> CreateAsync(Product product)
+        public async Task<Product> GetProductByIdAsync(int productId)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .FirstOrDefaultAsync(p => p.ProductId == productId);
+        }
+
+        public async Task<Product> CreateProductAsync(Product product)
+
         {
             await _context.Products.AddAsync(product);
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+            return product; // Trả về đối tượng Product sau khi lưu
         }
 
-        public async Task<int> UpdateAsync(Product product)
+        public async Task<bool> UpdateProductAsync(Product product)
         {
             _context.Products.Update(product);
-            return await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<int> DeleteAsync(int id)
+        public async Task<bool> DeleteProductAsync(int productId)
         {
-            var product = await _context.Products.FindAsync(id);
-            if (product == null) return 0;
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null) return false;
 
             _context.Products.Remove(product);
-            return await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
     }
+
 }

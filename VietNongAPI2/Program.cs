@@ -12,6 +12,8 @@ using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
 using Microsoft.Extensions.Options;
 using CloudinaryDotNet;
+using BusinessLayer.Converters;
+using Microsoft.OpenApi.Any;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,6 +33,7 @@ builder.Services.AddControllers()
     {
         options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
         options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+        options.JsonSerializerOptions.Converters.Add(new DateOnlyJsonConverter());
     });
 
 
@@ -53,6 +56,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options =>
 {
+    options.OperationFilter<AddFileUploadParameter>();
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
 
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -78,6 +82,12 @@ builder.Services.AddSwaggerGen(options =>
             },
             new string[] {}
         }
+    });
+    options.MapType<DateOnly>(() => new OpenApiSchema
+    {
+        Type = "string",
+        Format = "date",
+        Example = new OpenApiString("2024-11-20")
     });
 });
 

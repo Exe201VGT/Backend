@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CloudinaryDotNet.Actions;
+using CloudinaryDotNet;
 
 namespace VietNongAPI2.Controllers
 {
@@ -17,16 +19,17 @@ namespace VietNongAPI2.Controllers
     {
         private readonly IUserService _userService;
         private readonly IMapper _mapper;
-
-        public UserController(IUserService userService, IMapper mapper)
+        private readonly Cloudinary _cloudinary;
+        public UserController(IUserService userService, IMapper mapper, Cloudinary cloudinary)
         {
             _userService = userService;
             _mapper = mapper;
+            _cloudinary = cloudinary;
         }
 
         // Lấy danh sách người dùng (cho quản trị viên)
         [HttpGet]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<UserDTO>>> GetAllUsers()
         {
             var users = await _userService.GetAllUsersAsync();
@@ -36,7 +39,7 @@ namespace VietNongAPI2.Controllers
 
         // Lấy thông tin chi tiết người dùng theo ID (cho quản trị viên)
         [HttpGet("{id}")]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<UserDTO>> GetUserById(int id)
         {
             var user = await _userService.GetUserByIdAsync(id);
@@ -62,32 +65,70 @@ namespace VietNongAPI2.Controllers
 
         // Cập nhật profile người dùng
         [HttpPut("profile")]
-        [Authorize] // Yêu cầu người dùng phải đăng nhập
-        public async Task<IActionResult> UpdateUserProfile([FromBody] UserProfileUpdateDTO userProfileUpdateDto)
+        [Authorize]
+        public async Task<IActionResult> UpdateUserProfile([FromForm] UserProfileUpdateDTO userProfileUpdateDto)
         {
-            var userId = GetUserIdFromToken();
-
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(ModelState); // Trả về lỗi nếu DTO không hợp lệ
             }
+
+            var userId = _userService.GetUserIdFromToken();
 
             // Tìm user hiện tại
             var user = await _userService.GetUserByIdAsync(userId);
             if (user == null)
+            {
                 return NotFound(new { Message = "User not found" });
+            }
 
-            // Cập nhật các thông tin profile (trừ UserId)
-            _mapper.Map(userProfileUpdateDto, user);
+            // Upload ảnh lên Cloudinary nếu có
+            if (userProfileUpdateDto.ProfileImage != null)
+            {
+                // Xóa ảnh cũ trên Cloudinary nếu có
+                if (!string.IsNullOrEmpty(user.ProfileImage))
+                {
+                    var publicId = user.ProfileImage.Split('/').Last().Split('.').First();
+                    await _cloudinary.DestroyAsync(new DeletionParams(publicId));
+                }
 
+                // Upload ảnh mới
+                var uploadParams = new ImageUploadParams
+                {
+                    File = new FileDescription(userProfileUpdateDto.ProfileImage.FileName, userProfileUpdateDto.ProfileImage.OpenReadStream()),
+                    Transformation = new Transformation().Width(500).Height(500).Crop("fill")
+                };
+
+                var uploadResult = await _cloudinary.UploadAsync(uploadParams);
+
+                if (uploadResult.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    user.ProfileImage = uploadResult.SecureUrl.ToString(); // Lưu URL ảnh mới
+                }
+                else
+                {
+                    return StatusCode((int)uploadResult.StatusCode, new { Message = uploadResult.Error.Message });
+                }
+            }
+
+            // Cập nhật thông tin khác
+            user.Email = userProfileUpdateDto.Email;
+            user.FullName = userProfileUpdateDto.FullName;
+            user.PhoneNumber = userProfileUpdateDto.PhoneNumber;
+            user.Address = userProfileUpdateDto.Address;
+            user.DateOfBirth = userProfileUpdateDto.DateOfBirth;
+            user.Gender = userProfileUpdateDto.Gender;
+
+            // Gọi service để cập nhật user
             await _userService.UpdateUserAsync(user);
 
-            return Ok(new { Message = "Profile updated successfully" });
+            return Ok(new { Message = "Profile updated successfully", ProfileImageUrl = user.ProfileImage });
         }
+
 
         // Cập nhật trạng thái người dùng (kích hoạt hoặc khóa tài khoản)
         [HttpPatch("{id}/status")]
-        [Authorize(Roles = "admin")] // Yêu cầu quyền quản trị viên
+        [Authorize(Roles = "Admin")] // Yêu cầu quyền quản trị viên
         public async Task<IActionResult> UpdateUserStatus(int id, [FromBody] UserStatusUpdateDTO statusUpdateDto)
         {
             if (id != statusUpdateDto.UserId)
@@ -102,7 +143,7 @@ namespace VietNongAPI2.Controllers
 
         // Xóa người dùng (chỉ dành cho quản trị viên)
         [HttpDelete("{id}")]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var result = await _userService.DeleteUserAsync(id);
@@ -117,7 +158,7 @@ namespace VietNongAPI2.Controllers
         [Authorize] // Yêu cầu người dùng phải đăng nhập
         public async Task<ActionResult<UserProfileDTO>> GetUserProfile()
         {
-            var userId = GetUserIdFromToken();
+            var userId = _userService.GetUserIdFromToken();
             var user = await _userService.GetUserByIdAsync(userId);
 
             if (user == null)
@@ -127,14 +168,14 @@ namespace VietNongAPI2.Controllers
             return Ok(userProfileDTO);
         }
 
-        private int GetUserIdFromToken()
-        {
-            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (userIdClaim == null)
-            {
-                throw new UnauthorizedAccessException("User ID not found in token.");
-            }
-            return int.Parse(userIdClaim);
-        }
+        //private int GetUserIdFromToken()
+        //{
+        //    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        //    if (userIdClaim == null)
+        //    {
+        //        throw new UnauthorizedAccessException("User ID not found in token.");
+        //    }
+        //    return int.Parse(userIdClaim);
+        //}
     }
 }

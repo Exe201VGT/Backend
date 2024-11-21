@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EXE_Backend\\VietNongAPI2\\VietNongAPI2.csproj": {}
+    "D:\\Exe_BE\\VietNongAPI2\\VietNongAPI2.csproj": {}
   },
   "projects": {
-    "D:\\EXE_Backend\\BOs\\BOs.csproj": {
+    "D:\\Exe_BE\\BOs\\BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE_Backend\\BOs\\BOs.csproj",
+        "projectUniqueName": "D:\\Exe_BE\\BOs\\BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "D:\\EXE_Backend\\BOs\\BOs.csproj",
+        "projectPath": "D:\\Exe_BE\\BOs\\BOs.csproj",
         "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE_Backend\\BOs\\obj\\",
+        "outputPath": "D:\\Exe_BE\\BOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,14 +95,14 @@
         }
       }
     },
-    "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj": {
+    "D:\\Exe_BE\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "D:\\Exe_BE\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "D:\\Exe_BE\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE_Backend\\BusinessLayer\\obj\\",
+        "outputPath": "D:\\Exe_BE\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +120,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj"
+              "D:\\Exe_BE\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "D:\\Exe_BE\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -144,6 +144,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             }
           },
           "imports": [
@@ -166,14 +174,14 @@
         }
       }
     },
-    "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj": {
+    "D:\\Exe_BE\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "D:\\Exe_BE\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "D:\\EXE_Backend\\DataLayer\\DataLayer.csproj",
+        "projectPath": "D:\\Exe_BE\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE_Backend\\DataLayer\\obj\\",
+        "outputPath": "D:\\Exe_BE\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -191,8 +199,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\EXE_Backend\\BOs\\BOs.csproj": {
-                "projectPath": "D:\\EXE_Backend\\BOs\\BOs.csproj"
+              "D:\\Exe_BE\\BOs\\BOs.csproj": {
+                "projectPath": "D:\\Exe_BE\\BOs\\BOs.csproj"
               }
             }
           }
@@ -231,14 +239,14 @@
         }
       }
     },
-    "D:\\EXE_Backend\\VietNongAPI2\\VietNongAPI2.csproj": {
+    "D:\\Exe_BE\\VietNongAPI2\\VietNongAPI2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE_Backend\\VietNongAPI2\\VietNongAPI2.csproj",
+        "projectUniqueName": "D:\\Exe_BE\\VietNongAPI2\\VietNongAPI2.csproj",
         "projectName": "VietNongAPI2",
-        "projectPath": "D:\\EXE_Backend\\VietNongAPI2\\VietNongAPI2.csproj",
+        "projectPath": "D:\\Exe_BE\\VietNongAPI2\\VietNongAPI2.csproj",
         "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE_Backend\\VietNongAPI2\\obj\\",
+        "outputPath": "D:\\Exe_BE\\VietNongAPI2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -256,8 +264,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "D:\\EXE_Backend\\BusinessLayer\\BusinessLayer.csproj"
+              "D:\\Exe_BE\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "D:\\Exe_BE\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }

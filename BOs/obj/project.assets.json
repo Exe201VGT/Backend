@@ -4349,11 +4349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EXE_Backend\\BOs\\BOs.csproj",
+      "projectUniqueName": "D:\\Exe_BE\\BOs\\BOs.csproj",
       "projectName": "BOs",
-      "projectPath": "D:\\EXE_Backend\\BOs\\BOs.csproj",
+      "projectPath": "D:\\Exe_BE\\BOs\\BOs.csproj",
       "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-      "outputPath": "D:\\EXE_Backend\\BOs\\obj\\",
+      "outputPath": "D:\\Exe_BE\\BOs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
