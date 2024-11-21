@@ -16,6 +16,8 @@ namespace DataLayer.Repository
         Task<bool> UpdateUserAsync(User user);
         Task<bool> UpdateUserStatusAsync(int userId, string status);
         Task<bool> DeleteUserAsync(int userId);
+        Task<bool> IsEmailTaken(string email, int? userId = null);
+
     }
     public class UserRepository : IUserRepository
     {
@@ -64,5 +66,11 @@ namespace DataLayer.Repository
             _context.Users.Remove(user);
             return await _context.SaveChangesAsync() > 0;
         }
+        public async Task<bool> IsEmailTaken(string email, int? userId = null)
+        {
+            return await _context.Users
+                .AnyAsync(u => u.Email == email && (!userId.HasValue || u.UserId != userId));
+        }
+
     }
 }

@@ -16,5 +16,6 @@ namespace BusinessLayer.Service.Interface
         Task<bool> UpdateUserAsync(User user);
         Task<bool> UpdateUserStatusAsync(int userId, string status);
         Task<bool> DeleteUserAsync(int userId);
+        int GetUserIdFromToken();
     }
 }

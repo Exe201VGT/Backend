@@ -34,7 +34,7 @@ namespace VietNongAPI2.AppStarts
         public static IServiceCollection AddWebAPIService(this IServiceCollection services)
         {
             // use DI here
-           
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IAuthServices, AuthServices>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();

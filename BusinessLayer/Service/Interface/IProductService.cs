@@ -9,10 +9,11 @@ namespace BusinessLayer.Service.Interface
 {
     public interface IProductService
     {
-        Task<IEnumerable<Product>> GetAllProductsAsync();
-        Task<Product> GetProductByIdAsync(int id);
-        Task<int> CreateProductAsync(Product product);
-        Task<int> UpdateProductAsync(Product product);
-        Task<int> DeleteProductAsync(int id);
+        Task<IEnumerable<Product>> GetPagedProductsAsync(int page, int pageSize);
+        Task<int> GetTotalProductsCountAsync();
+        Task<Product> GetProductByIdAsync(int productId);
+        Task<Product> CreateProductAsync(Product product, int userId);
+        Task<bool> UpdateProductAsync(Product product, int userId);
+        Task<bool> DeleteProductAsync(int productId, int userId);
     }
 }

@@ -47,5 +47,6 @@ namespace BusinessLayer.Service
         {
             return await _sellerRepository.DeleteSellerAsync(sellerId);
         }
+
     }
 }

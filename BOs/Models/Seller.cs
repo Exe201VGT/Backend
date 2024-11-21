@@ -17,6 +17,8 @@ public partial class Seller
 
     public string? Email { get; set; }
 
+    public string? ShopImage { get; set; }
+
     public decimal? Rating { get; set; }
 
     public DateTime? CreatedAt { get; set; }

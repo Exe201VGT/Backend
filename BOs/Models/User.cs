@@ -23,6 +23,8 @@ public partial class User
 
     public string? Gender { get; set; }
 
+    public string? ProfileImage { get; set; }
+
     public int? RoleId { get; set; }
 
     public DateTime? CreatedAt { get; set; }
@@ -31,9 +33,13 @@ public partial class User
 
     public string? Status { get; set; }
 
+    public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
+
     public virtual ICollection<OrderHistory> OrderHistories { get; set; } = new List<OrderHistory>();
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+
+    public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
     public virtual Role? Role { get; set; }
 
