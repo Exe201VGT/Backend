@@ -16,6 +16,7 @@ namespace DataLayer.Repository
         Task<Product> CreateProductAsync(Product product);
         Task<bool> UpdateProductAsync(Product product);
         Task<bool> DeleteProductAsync(int productId);
+        Task<IEnumerable<Product>> GetProductsBySellerIdAsync(int sellerId, int page, int pageSize);
     }
 
     public class ProductRepository : IProductRepository
@@ -71,6 +72,17 @@ namespace DataLayer.Repository
             _context.Products.Remove(product);
             return await _context.SaveChangesAsync() > 0;
         }
+        public async Task<IEnumerable<Product>> GetProductsBySellerIdAsync(int sellerId, int page, int pageSize)
+        {
+            return await _context.Products
+                .Where(p => p.SellerId == sellerId)
+                .OrderBy(p => p.CreatedAt)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .Include(p => p.Category)
+                .ToListAsync();
+        }
+
     }
 
 }
