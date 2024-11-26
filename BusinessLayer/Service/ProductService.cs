@@ -14,11 +14,13 @@ namespace BusinessLayer.Service
     {
         private readonly IProductRepository _productRepository;
         private readonly ISellerService _sellerService;
+        private readonly IUserService _userService;
 
-        public ProductService(IProductRepository productRepository, ISellerService sellerService)
+        public ProductService(IProductRepository productRepository, ISellerService sellerService, IUserService userService)
         {
             _productRepository = productRepository;
             _sellerService = sellerService;
+            _userService = userService;
         }
 
         public async Task<IEnumerable<Product>> GetPagedProductsAsync(int page, int pageSize)
@@ -102,7 +104,22 @@ namespace BusinessLayer.Service
             // Xóa sản phẩm
             return await _productRepository.DeleteProductAsync(productId);
         }
+        // Phương thức đã sửa để tự động lấy sellerId từ token
+        public async Task<IEnumerable<Product>> GetProductsBySellerIdAsync(int page, int pageSize)
+        {
+            // Lấy userId từ token thông qua phương thức GetUserIdFromToken
+            var userId = _userService.GetUserIdFromToken();
 
+            // Lấy SellerId từ dịch vụ SellerService thông qua userId
+            var seller = await _sellerService.GetSellerByUserIdAsync(userId);
+            if (seller == null)
+            {
+                throw new UnauthorizedAccessException("User is not a registered seller.");
+            }
+
+            // Truyền SellerId để lấy danh sách sản phẩm
+            return await _productRepository.GetProductsBySellerIdAsync(seller.SellerId, page, pageSize);
+        }
     }
 
 }

@@ -199,6 +199,33 @@ namespace VietNongAPI2.Controllers
 
             return Ok(new { Message = "Product deleted successfully" });
         }
+        [HttpGet("seller-products")]
+        [Authorize]
+        public async Task<IActionResult> GetProductsBySeller([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        {
+            try
+            {
+                // Gọi service để lấy sản phẩm theo sellerId từ token
+                var products = await _productService.GetProductsBySellerIdAsync(page, pageSize);
+                var productDTOs = _mapper.Map<IEnumerable<ProductDTO>>(products);
+
+                return Ok(new
+                {
+                    Data = productDTOs,
+                    Page = page,
+                    PageSize = pageSize,
+                    TotalCount = await _productService.GetTotalProductsCountAsync()  // Hoặc có thể lấy tổng số sản phẩm của seller nếu cần
+                });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = ex.Message });
+            }
+        }
     }
 
 }

@@ -15,5 +15,6 @@ namespace BusinessLayer.Service.Interface
         Task<Product> CreateProductAsync(Product product, int userId);
         Task<bool> UpdateProductAsync(Product product, int userId);
         Task<bool> DeleteProductAsync(int productId, int userId);
+        Task<IEnumerable<Product>> GetProductsBySellerIdAsync(int page, int pageSize);
     }
 }

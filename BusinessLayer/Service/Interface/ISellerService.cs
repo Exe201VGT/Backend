@@ -15,5 +15,6 @@ namespace BusinessLayer.Service.Interface
         Task<Seller> RegisterSellerAsync(Seller seller); // Đăng ký Seller
         Task<bool> UpdateSellerAsync(Seller seller);
         Task<bool> DeleteSellerAsync(int sellerId);
+        
     }
 }

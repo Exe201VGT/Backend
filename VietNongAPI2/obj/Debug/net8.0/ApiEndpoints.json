@@ -32,6 +32,106 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "VietNongAPI2.Controllers.CartController",
+    "Method": "GetCartByUserId",
+    "RelativePath": "api/cart/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CartController",
+    "Method": "Checkout",
+    "RelativePath": "api/cart/user/{userId}/checkout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CartController",
+    "Method": "AddItemToCart",
+    "RelativePath": "api/cart/user/{userId}/items",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cartItem",
+        "Type": "BOs.Models.CartItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CartController",
+    "Method": "UpdateCartItem",
+    "RelativePath": "api/cart/user/{userId}/items/{cartItemId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cartItemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cartItem",
+        "Type": "BOs.Models.CartItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.CartController",
+    "Method": "RemoveItemFromCart",
+    "RelativePath": "api/cart/user/{userId}/items/{cartItemId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cartItemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VietNongAPI2.Controllers.ImagesController",
     "Method": "UploadImage",
     "RelativePath": "api/images/upload",
@@ -1598,6 +1698,27 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VietNongAPI2.Controllers.ProductController",
+    "Method": "GetProductsBySeller",
+    "RelativePath": "odata/product/seller-products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
