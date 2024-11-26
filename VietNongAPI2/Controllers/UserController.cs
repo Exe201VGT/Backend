@@ -168,14 +168,5 @@ namespace VietNongAPI2.Controllers
             return Ok(userProfileDTO);
         }
 
-        //private int GetUserIdFromToken()
-        //{
-        //    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        //    if (userIdClaim == null)
-        //    {
-        //        throw new UnauthorizedAccessException("User ID not found in token.");
-        //    }
-        //    return int.Parse(userIdClaim);
-        //}
     }
 }
