@@ -92,5 +92,23 @@ namespace BusinessLayer.Service
 
             return int.Parse(userIdClaim);
         }
+        public async Task<bool> UpdateUserRoleAsync(int userId, int newRoleId)
+        {
+            // Kiểm tra userId có tồn tại không
+            var user = await _userRepository.GetUserByIdAsync(userId);
+            if (user == null)
+            {
+                throw new ArgumentException("User not found.");
+            }
+
+            // Cập nhật RoleId
+            user.RoleId = newRoleId;
+            user.UpdatedAt = DateTime.UtcNow; // Cập nhật thời gian sửa đổi
+
+            // Lưu thay đổi
+            return await _userRepository.UpdateUserAsync(user);
+        }
+
+
     }
 }

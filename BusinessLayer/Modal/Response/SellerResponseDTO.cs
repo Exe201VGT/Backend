@@ -15,6 +15,7 @@ namespace BusinessLayer.Modal.Response
         public string? PhoneNumber { get; set; }
         public string? Email { get; set; }
         public decimal? Rating { get; set; }
+        public string? ShopImage { get; set; }
         public DateTime? CreatedAt { get; set; }
     }
     

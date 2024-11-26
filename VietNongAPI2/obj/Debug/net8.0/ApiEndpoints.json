@@ -2036,9 +2036,34 @@
         "IsRequired": true
       },
       {
-        "Name": "sellerUpdateDto",
-        "Type": "BusinessLayer.Modal.Request.SellerUpdateDTO",
-        "IsRequired": true
+        "Name": "ShopName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShopAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rating",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShopImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -2068,9 +2093,34 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sellerRegisterDto",
-        "Type": "BusinessLayer.Modal.Request.SellerRegisterDTO",
-        "IsRequired": true
+        "Name": "ShopName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShopAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rating",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShopImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
