@@ -53,8 +53,22 @@ namespace VietNongAPI2.Controllers
         {
             var product = await _productService.GetProductByIdAsync(id);
             if (product == null) return NotFound();
-            return Ok(_mapper.Map<ProductDTO>(product));
+
+            var productDTO = _mapper.Map<ProductDTO>(product);
+
+            // Nếu cần có thông tin seller, bạn có thể thêm vào DTO này
+            if (product.Seller != null)
+            {
+                productDTO.Seller = _mapper.Map<SellerDTO>(product.Seller);
+            }
+
+            // Nếu cần có thông tin Reviews, bạn có thể thêm vào DTO này
+            var reviews = product.Reviews.Select(r => _mapper.Map<ReviewDTO>(r)).ToList();
+            productDTO.Reviews = reviews;
+
+            return Ok(productDTO);
         }
+
 
         [HttpPost]
         [Authorize]

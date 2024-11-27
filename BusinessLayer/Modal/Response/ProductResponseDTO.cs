@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BOs.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,8 @@ namespace BusinessLayer.Modal.Response
         public int ReviewCount { get; set; }
         public string ProductImage { get; set; }
         public DateTime CreatedAt { get; set; }
+        public SellerDTO Seller { get; set; } 
+        public List<ReviewDTO> Reviews { get; set; } 
 
     }
 }
