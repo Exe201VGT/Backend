@@ -1,7 +1,136 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Exe_BE\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_be\\vietnongapi2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\response\\reviewresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\reviewresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\response\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|d:\\exe_be\\datalayer\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|d:\\exe_be\\bos\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|solutionrelative:bos\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\response\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\response\\sellerresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\sellerresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\response\\revenueresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\revenueresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|d:\\exe_be\\bos\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|solutionrelative:bos\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_be\\vietnongapi2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_be\\vietnongapi2\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\interface\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\interface\\iorderhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\iorderhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\interface\\iorderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\iorderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\interface\\isellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\interface\\isellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|d:\\exe_be\\vietnongapi2\\appstarts\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F069407D-1AA3-496A-9466-F68F196D60DD}|VietNongAPI2\\VietNongAPI2.csproj|solutionrelative:vietnongapi2\\appstarts\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|d:\\exe_be\\datalayer\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|d:\\exe_be\\datalayer\\repository\\sellerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B61199-19D5-4193-A9BE-1AA91FD02724}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\sellerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\request\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\request\\productrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\productrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\request\\sellerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\sellerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\request\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|d:\\exe_be\\bos\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BB60C2-AA78-4702-A8C8-9ED302F5B38D}|BOs\\BOs.csproj|solutionrelative:bos\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\request\\orderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\request\\orderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|d:\\exe_be\\businesslayer\\modal\\response\\categoryresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13979C47-D625-4171-9D50-45CF6338A958}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\modal\\response\\categoryresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 498,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +163,422 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewResponseDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\ReviewResponseDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\ReviewResponseDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\ReviewResponseDTO.cs*",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\ReviewResponseDTO.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:58:06.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\DataLayer\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\ProductRepository.cs",
+              "ToolTip": "D:\\Exe_BE\\DataLayer\\Repository\\ProductRepository.cs*",
+              "RelativeToolTip": "DataLayer\\Repository\\ProductRepository.cs*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswDIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:36:00.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BOs\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "BOs\\Models\\Product.cs",
+              "ToolTip": "D:\\Exe_BE\\BOs\\Models\\Product.cs",
+              "RelativeToolTip": "BOs\\Models\\Product.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAIA8wCkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:32:47.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\ProductService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\ProductService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\ProductService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswHoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:30:11.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductResponseDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs*",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\ProductResponseDTO.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:31:30.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\VietNongAPI2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "VietNongAPI2\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Exe_BE\\VietNongAPI2\\Controllers\\ProductController.cs*",
+              "RelativeToolTip": "VietNongAPI2\\Controllers\\ProductController.cs*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:40:30.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TokenModel.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\TokenModel.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\TokenModel.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\TokenModel.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\TokenModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:59:26.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RevenueResponseDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\RevenueResponseDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\RevenueResponseDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\RevenueResponseDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\RevenueResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:59:23.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BOs\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "BOs\\Models\\Review.cs",
+              "ToolTip": "D:\\Exe_BE\\BOs\\Models\\Review.cs",
+              "RelativeToolTip": "BOs\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:58:17.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SellerResponseDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\SellerResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:33:24.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\IProductService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IProductService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:37:58.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IAuthService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\IAuthService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IAuthService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:38:56.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\OrderService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\OrderService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\OrderService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\OrderService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:39:05.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\UserService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\UserService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\UserService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:39:43.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\VietNongAPI2\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "VietNongAPI2\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Exe_BE\\VietNongAPI2\\Controllers\\UserController.cs",
+              "RelativeToolTip": "VietNongAPI2\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:39:58.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RevenueController.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\VietNongAPI2\\Controllers\\RevenueController.cs",
+              "RelativeDocumentMoniker": "VietNongAPI2\\Controllers\\RevenueController.cs",
+              "ToolTip": "D:\\Exe_BE\\VietNongAPI2\\Controllers\\RevenueController.cs",
+              "RelativeToolTip": "VietNongAPI2\\Controllers\\RevenueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:40:49.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICartService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\ICartService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\ICartService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\ICartService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\ICartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:38:55.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\ICategoryService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\ICategoryService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:38:55.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IOrderHistoryService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IOrderHistoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\IOrderHistoryService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IOrderHistoryService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\IOrderHistoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:38:53.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IOrderDetailService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IOrderDetailService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\IOrderDetailService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\IOrderDetailService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\IOrderDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:38:50.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ISellerService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\ISellerService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\Interface\\ISellerService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\Interface\\ISellerService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\Interface\\ISellerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:38:43.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AutoMapperConfig.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
+              "RelativeDocumentMoniker": "VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
+              "ToolTip": "D:\\Exe_BE\\VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
+              "RelativeToolTip": "VietNongAPI2\\AppStarts\\AutoMapperConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:38:26.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\DataLayer\\Repository\\CartRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\CartRepository.cs",
+              "ToolTip": "D:\\Exe_BE\\DataLayer\\Repository\\CartRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\CartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:37:06.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SellerRepository.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\DataLayer\\Repository\\SellerRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\SellerRepository.cs",
+              "ToolTip": "D:\\Exe_BE\\DataLayer\\Repository\\SellerRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\SellerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:37:04.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Service\\CartService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\CartService.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Service\\CartService.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\CartService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:35:09.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:34:00.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BOs\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "BOs\\Models\\Order.cs",
+              "ToolTip": "D:\\Exe_BE\\BOs\\Models\\Order.cs",
+              "RelativeToolTip": "BOs\\Models\\Order.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:33:49.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OrderRequestDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\OrderRequestDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\OrderRequestDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\OrderRequestDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\OrderRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:33:39.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserRequestDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\UserRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:33:57.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SellerRequestDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\SellerRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:33:58.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductRequestDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\ProductRequestDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Request\\ProductRequestDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Request\\ProductRequestDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Request\\ProductRequestDTO.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:30:52.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CategoryResponseDTO.cs",
+              "DocumentMoniker": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\CategoryResponseDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Modal\\Response\\CategoryResponseDTO.cs",
+              "ToolTip": "D:\\Exe_BE\\BusinessLayer\\Modal\\Response\\CategoryResponseDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\Modal\\Response\\CategoryResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:31:59.756Z",
+              "EditorCaption": ""
             }
           ]
         },
