@@ -14,8 +14,14 @@ using Microsoft.Extensions.Options;
 using CloudinaryDotNet;
 using BusinessLayer.Converters;
 using Microsoft.OpenApi.Any;
+using Net.payOS;
 
 
+IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("appsettings.development.json").Build();
+
+PayOS payOS = new PayOS(configuration["Environment:PAYOS_CLIENT_ID"] ?? throw new Exception("Cannot find environment"),
+                    configuration["Environment:PAYOS_API_KEY"] ?? throw new Exception("Cannot find environment"),
+                    configuration["Environment:PAYOS_CHECKSUM_KEY"] ?? throw new Exception("Cannot find environment"));
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
@@ -44,6 +50,7 @@ builder.Services.InstallService(builder.Configuration);
 builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 // Đăng ký dịch vụ Cloudinary
+builder.Services.AddSingleton(payOS);
 builder.Services.AddSingleton(sp =>
 {
     var settings = sp.GetRequiredService<IOptions<CloudinarySettings>>().Value;
