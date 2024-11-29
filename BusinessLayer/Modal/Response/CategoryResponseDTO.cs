@@ -15,6 +15,6 @@ namespace BusinessLayer.Modal.Response
 
         public string? Description { get; set; }
 
-        public IFormFile? Image { get; set; }
+        public string? Image { get; set; }
     }
 }
