@@ -1,7 +1,12 @@
-﻿using BOs.Models;
+﻿using AutoMapper;
+using BOs.Models;
+using BusinessLayer.Modal.Request;
+using BusinessLayer.Modal.Response;
 using BusinessLayer.Service.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace VietNongAPI2.Controllers
 {
@@ -10,57 +15,102 @@ namespace VietNongAPI2.Controllers
     public class CartController : ControllerBase
     {
         private readonly ICartService _cartService;
+        private readonly IUserService _userService; // Đảm bảo chúng ta có IUserService để lấy userId từ token
 
-        public CartController(ICartService cartService)
+        public CartController(ICartService cartService, IUserService userService)
         {
             _cartService = cartService;
+            _userService = userService;
         }
 
-        // Lấy giỏ hàng của người dùng
-        [HttpGet("user/{userId}")]
-        public async Task<IActionResult> GetCartByUserId(int userId)
+        [HttpGet("cart")]
+        public async Task<IActionResult> GetCart()
         {
-            var cart = await _cartService.GetCartByUserIdAsync(userId);
-            if (cart == null) return NotFound(new { Message = "Cart not found" });
-            return Ok(cart);
+            try
+            {
+                // Lấy userId từ token
+                int userId = _userService.GetUserIdFromToken();
+
+                var cart = await _cartService.GetCartAsync();
+                if (cart == null)
+                {
+                    return NotFound(new { Message = "Cart not found" });
+                }
+
+                return Ok(cart);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
         }
+
 
         // Thêm sản phẩm vào giỏ hàng
-        [HttpPost("user/{userId}/items")]
-        public async Task<IActionResult> AddItemToCart(int userId, [FromBody] CartItem cartItem)
+        [HttpPost("add-item")]
+        public async Task<IActionResult> AddItemToCart([FromBody] AddToCartDTO addToCartDTO)
         {
-            var addedCartItemDTO = await _cartService.AddItemToCartAsync(userId, cartItem);
-            return CreatedAtAction(nameof(GetCartByUserId), new { userId = userId }, addedCartItemDTO);
+            try
+            {
+                // Gọi service để thêm sản phẩm vào giỏ hàng
+                var cartItemDTO = await _cartService.AddItemToCartAsync(addToCartDTO.ProductId, addToCartDTO.Quantity);
+                return Ok(cartItemDTO);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
         }
 
 
-        // Cập nhật sản phẩm trong giỏ hàng
-        [HttpPut("user/{userId}/items/{cartItemId}")]
-        public async Task<IActionResult> UpdateCartItem(int userId, int cartItemId, [FromBody] CartItem cartItem)
+        // Cập nhật số lượng sản phẩm trong giỏ hàng
+        [HttpPut("update-item/{cartItemId}")]
+        public async Task<IActionResult> UpdateCartItem(int cartItemId, [FromBody] int quantity)
         {
-            cartItem.CartItemId = cartItemId;
-            var success = await _cartService.UpdateCartItemAsync(userId, cartItem);
-            if (!success) return NotFound(new { Message = "Cart item not found" });
-            return Ok();
+            try
+            {
+                // Lấy userId từ token
+                int userId = _userService.GetUserIdFromToken();
+
+                var cartItem = await _cartService.UpdateItemQuantityAsync(cartItemId, quantity);
+                if (cartItem == null)
+                {
+                    return BadRequest(new { Message = "Failed to update product to cart" });
+                }
+
+                return Ok(cartItem);
+                
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
         }
 
         // Xóa sản phẩm khỏi giỏ hàng
-        [HttpDelete("user/{userId}/items/{cartItemId}")]
-        public async Task<IActionResult> RemoveItemFromCart(int userId, int cartItemId)
+        [HttpDelete("remove-item/{cartItemId}")]
+        public async Task<IActionResult> RemoveItemFromCart(int cartItemId)
         {
-            var success = await _cartService.RemoveItemFromCartAsync(userId, cartItemId);
-            if (!success) return NotFound(new { Message = "Cart item not found" });
-            return NoContent();
-        }
+            try
+            {
+                // Lấy userId từ token
+                int userId = _userService.GetUserIdFromToken();
 
-        // Thanh toán giỏ hàng
-        [HttpPost("user/{userId}/checkout")]
-        public async Task<IActionResult> Checkout(int userId)
-        {
-            var success = await _cartService.CheckoutAsync(userId);
-            if (!success) return BadRequest(new { Message = "Checkout failed" });
-            return Ok(new { Message = "Checkout successful" });
+                var result = await _cartService.RemoveItemFromCartAsync(cartItemId);
+                if (result)
+                    return Ok(new { Message = "Product removed from cart" });
+
+                return BadRequest(new { Message = "Failed to remove product from cart" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
         }
     }
 
+
 }
+
+
+
