@@ -10,12 +10,10 @@ namespace BusinessLayer.Service.Interface
 {
     public interface ICartService
     {
-        Task<Cart> GetCartByUserIdAsync(int userId);
-        Task<CartItemDTO> AddItemToCartAsync(int userId, CartItem cartItem);
-        Task<bool> UpdateCartItemAsync(int userId, CartItem cartItem);
-        Task<bool> RemoveItemFromCartAsync(int userId, int cartItemId);
-        Task<bool> ClearCartAsync(int userId);
-        Task<bool> CheckoutAsync(int userId);
+        Task<CartDTO> GetCartAsync();
+        Task<CartItemDTO> AddItemToCartAsync(int productId, int quantity);
+        Task<CartItemDTO> UpdateItemQuantityAsync(int cartItemId, int quantity);
+        Task<bool> RemoveItemFromCartAsync(int cartItemId);
     }
 
 }

@@ -30,6 +30,11 @@ namespace VietNongAPI2.AppStarts
             CreateMap<Seller, SellerDTO>();
             CreateMap<SellerRegisterDTO, Seller>();
             CreateMap<SellerUpdateDTO, Seller>();
+            CreateMap<Cart, CartDTO>();
+            CreateMap<CartItem, CartItemDTO>()
+    .ForMember(dest => dest.ProductName, opt => opt.MapFrom(src => src.Product.Name))    // Map Product.Name to CartItemDTO.ProductName
+    .ForMember(dest => dest.ProductImage, opt => opt.MapFrom(src => src.Product.ProductImage)); // Map Product.ProductImage to CartItemDTO.ProductImage
+            CreateMap<Product, CartItemDTO>();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using BOs.Models;
+﻿using AutoMapper;
+using BOs.Models;
 using BusinessLayer.Modal.Response;
 using BusinessLayer.Service.Interface;
 using DataLayer.Repository;
@@ -13,116 +14,109 @@ namespace BusinessLayer.Service
     public class CartService : ICartService
     {
         private readonly ICartRepository _cartRepository;
+        private readonly IMapper _mapper;
+        private readonly IUserService _userService;
         private readonly IProductRepository _productRepository;
-        private readonly ISellerService _sellerService;
 
-        public CartService(ICartRepository cartRepository, IProductRepository productRepository, ISellerService sellerService)
+        public CartService(ICartRepository cartRepository, IMapper mapper, IUserService userService)
         {
             _cartRepository = cartRepository;
-            _productRepository = productRepository;
-            _sellerService = sellerService;
+            _mapper = mapper;
+            _userService = userService;
         }
 
-        // Lấy giỏ hàng của người dùng
-        public async Task<Cart> GetCartByUserIdAsync(int userId)
+        public async Task<CartDTO> GetCartAsync()
         {
-            return await _cartRepository.GetCartByUserIdAsync(userId);
-        }
+            // Lấy userId từ token
+            int userId = _userService.GetUserIdFromToken();
 
-        // Thêm sản phẩm vào giỏ hàng
-        public async Task<CartItemDTO> AddItemToCartAsync(int userId, CartItem cartItem)
-        {
+            // Lấy giỏ hàng của người dùng
             var cart = await _cartRepository.GetCartByUserIdAsync(userId);
+
             if (cart == null)
             {
-                cart = new Cart { UserId = userId, CreatedAt = DateTime.UtcNow };
-                await _cartRepository.CreateCartAsync(cart);
+                return null; // Hoặc có thể trả về một giỏ hàng rỗng, tùy thuộc vào yêu cầu của bạn
             }
 
-            // Kiểm tra sự tồn tại của sản phẩm
-            var product = await _productRepository.GetProductByIdAsync(cartItem.ProductId);
-            if (product == null)
+            // Chuyển đổi sang DTO
+            var cartDTO = _mapper.Map<CartDTO>(cart);
+
+            // Trả về giỏ hàng
+            return cartDTO;
+        }
+
+        public async Task<CartItemDTO> AddItemToCartAsync(int productId, int quantity)
+        {
+            // Lấy userId từ token thông qua phương thức GetUserIdFromToken
+            int userId = _userService.GetUserIdFromToken();
+
+            // Lấy giỏ hàng của người dùng, nếu có
+            var cart = await _cartRepository.GetCartByUserIdAsync(userId);
+
+            // Nếu người dùng chưa có giỏ hàng, tạo mới giỏ hàng
+            if (cart == null)
             {
-                throw new KeyNotFoundException("Product not found.");
-            }
+                cart = new Cart
+                {
+                    UserId = userId,
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow
+                };
 
+                // Thêm giỏ hàng mới vào cơ sở dữ liệu
+                await _cartRepository.AddCartAsync(cart);
+            }
+            Console.WriteLine($"UserId: {userId}");
             // Thêm sản phẩm vào giỏ hàng
-            cartItem.CartId = cart.CartId;
-            cartItem.CreatedAt = DateTime.UtcNow;
+            var cartItem = await _cartRepository.AddItemToCartAsync(cart.CartId, productId, quantity);
 
-            // Lưu vào cơ sở dữ liệu
-            var addedCartItem = await _cartRepository.AddCartItemAsync(cartItem);
-
-            // Tạo CartItemDTO để trả về thông tin giỏ hàng bao gồm thông tin sản phẩm
-            var cartItemDTO = new CartItemDTO
-            {
-                CartItemId = addedCartItem.CartItemId,
-                ProductId = addedCartItem.ProductId,
-                ProductName = product.Name,
-                Price = product.Price,
-                Quantity = addedCartItem.Quantity,
-                ProductImage = product.ProductImage // Lấy đường dẫn hình ảnh từ sản phẩm
-            };
-
-            return cartItemDTO;
+            // Trả về CartItemDTO
+            return _mapper.Map<CartItemDTO>(cartItem);
         }
 
 
-        // Cập nhật sản phẩm trong giỏ hàng
-        public async Task<bool> UpdateCartItemAsync(int userId, CartItem cartItem)
+
+
+        public async Task<CartItemDTO> UpdateItemQuantityAsync(int cartItemId, int quantity)
         {
+            // Lấy userId từ token
+            int userId = _userService.GetUserIdFromToken();
+
+            // Lấy giỏ hàng của người dùng
             var cart = await _cartRepository.GetCartByUserIdAsync(userId);
+
+            // Kiểm tra xem giỏ hàng có tồn tại không
             if (cart == null)
             {
-                throw new InvalidOperationException("Cart not found.");
+                throw new InvalidOperationException("Cart not found for the user.");
             }
 
-            var existingCartItem = await _cartRepository.GetCartItemByIdAsync(cartItem.CartItemId);
-            if (existingCartItem == null || existingCartItem.CartId != cart.CartId)
-            {
-                throw new InvalidOperationException("Cart item not found.");
-            }
+            // Cập nhật số lượng sản phẩm trong giỏ hàng
+            var cartItem = await _cartRepository.UpdateItemQuantityAsync(cart.CartId, cartItemId, quantity);
 
-            existingCartItem.Quantity = cartItem.Quantity;
-            return await _cartRepository.UpdateCartItemAsync(existingCartItem);
+            // Trả về CartItemDTO
+            return _mapper.Map<CartItemDTO>(cartItem);
         }
 
-        // Xóa sản phẩm khỏi giỏ hàng
-        public async Task<bool> RemoveItemFromCartAsync(int userId, int cartItemId)
+
+        public async Task<bool> RemoveItemFromCartAsync(int cartItemId)
         {
+            // Lấy userId từ token
+            int userId = _userService.GetUserIdFromToken();
+
+            // Lấy giỏ hàng của người dùng
             var cart = await _cartRepository.GetCartByUserIdAsync(userId);
+
+            // Kiểm tra xem giỏ hàng có tồn tại không
             if (cart == null)
             {
-                throw new InvalidOperationException("Cart not found.");
+                throw new InvalidOperationException("Cart not found for the user.");
             }
 
-            return await _cartRepository.RemoveCartItemAsync(cartItemId);
+            // Xóa sản phẩm khỏi giỏ hàng
+            return await _cartRepository.RemoveItemFromCartAsync(cart.CartId, cartItemId);
         }
 
-        // Xóa tất cả sản phẩm trong giỏ hàng (dùng khi thanh toán)
-        public async Task<bool> ClearCartAsync(int userId)
-        {
-            var cart = await _cartRepository.GetCartByUserIdAsync(userId);
-            if (cart == null)
-            {
-                throw new InvalidOperationException("Cart not found.");
-            }
-
-            return await _cartRepository.ClearCartAsync(cart.CartId);
-        }
-
-        // Thanh toán giỏ hàng
-        public async Task<bool> CheckoutAsync(int userId)
-        {
-            var cart = await _cartRepository.GetCartByUserIdAsync(userId);
-            if (cart == null)
-            {
-                throw new InvalidOperationException("Cart not found.");
-            }
-
-            // Thanh toán và xóa sản phẩm trong giỏ
-            return await _cartRepository.CheckoutCartAsync(cart.CartId);
-        }
     }
 
 }

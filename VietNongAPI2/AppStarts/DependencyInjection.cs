@@ -52,7 +52,8 @@ namespace VietNongAPI2.AppStarts
             services.AddScoped<IOrderHistoryService, OrderHistoryService>();
             services.AddScoped<ISellerRepository, SellerRepository>();
             services.AddScoped<ISellerService, SellerService>();
-
+            services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<ICartService, CartService>();
 
 
             // auto mapper
