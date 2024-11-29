@@ -3,6 +3,8 @@ using BOs.Models;
 using BusinessLayer.Modal.Request;
 using BusinessLayer.Modal.Response;
 using BusinessLayer.Service.Interface;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
@@ -16,11 +18,15 @@ namespace VietNongAPI2.Controllers
     {
         private readonly ICategoryService _categoryService;
         private readonly IMapper _mapper;
+        private readonly Cloudinary _cloudinary;
 
-        public CategoryController(ICategoryService categoryService, IMapper mapper)
+
+        public CategoryController(ICategoryService categoryService, IMapper mapper, Cloudinary cloudinary)
         {
             _categoryService = categoryService;
             _mapper = mapper;
+            _cloudinary = cloudinary;
+
         }
 
         [EnableQuery]
@@ -45,13 +51,34 @@ namespace VietNongAPI2.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateCategory([FromBody] CategoryCreateDTO categoryCreateDTO)
+        public async Task<IActionResult> CreateCategory([FromForm] CategoryCreateDTO categoryCreateDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+            string CategoryImageUrl = null;
+            if (categoryCreateDTO.Image != null)
+            {
+                var uploadParams = new ImageUploadParams
+                {
+                    File = new FileDescription(categoryCreateDTO.Image.FileName, categoryCreateDTO.Image.OpenReadStream()),
+                    Transformation = new Transformation().Width(500).Height(500).Crop("fill")
+                };
+
+                var uploadResult = await _cloudinary.UploadAsync(uploadParams);
+
+                if (uploadResult.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    CategoryImageUrl = uploadResult.SecureUrl.ToString(); // Lưu URL ảnh
+                }
+                else
+                {
+                    return StatusCode((int)uploadResult.StatusCode, new { Message = uploadResult.Error.Message });
+                }
+            }
             var category = _mapper.Map<Category>(categoryCreateDTO);
+            category.Image = CategoryImageUrl;
             var result = await _categoryService.CreateCategoryAsync(category);
             if (result > 0)
             {
