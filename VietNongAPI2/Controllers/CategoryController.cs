@@ -79,6 +79,7 @@ namespace VietNongAPI2.Controllers
             }
             var category = _mapper.Map<Category>(categoryCreateDTO);
             category.Image = CategoryImageUrl;
+
             var result = await _categoryService.CreateCategoryAsync(category);
             if (result > 0)
             {
